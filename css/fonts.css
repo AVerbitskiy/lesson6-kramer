@@ -1,0 +1,30 @@
+@font-face {
+    font-family: 'Droid Sans';
+    src: url('../fonts/DroidSans-Bold.eot');
+    src: local('../fonts/Droid Sans Bold'), local('DroidSans-Bold'),
+        url('../fonts/DroidSans-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/DroidSans-Bold.woff') format('woff'),
+        url('../fonts/DroidSans-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Droid Sans Mono';
+    src: url('../fonts/DroidSansMono.eot');
+    src: local('../fonts/Droid Sans Mono Regular'), local('DroidSansMono'),
+        url('../fonts/DroidSansMono.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/DroidSansMono.woff') format('woff'),
+        url('../fonts/DroidSansMono.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Droid Sans';
+    src: url('../fonts/DroidSans.eot');
+    src: local('../fonts/Droid Sans'), local('DroidSans'),
+        url('../fonts/DroidSans.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/DroidSans.woff') format('woff'),
+        url('../fonts/DroidSans.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

@@ -1,6 +1,8 @@
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
 @import "reset.scss";
-
+body{
+    font-family: 'Droid Sans';
+}
 header {
     background-color: transparent;
     position: fixed;
@@ -22,6 +24,7 @@ header .container {
 }
 .menu {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     height: 100%;
 }
@@ -31,10 +34,6 @@ header .container {
 .menu-item a {
     color: #FFF;
     font-size: 16px;
-}
-.video {
-    height: 100vh;
-    background-color: antiquewhite;
 }
 video {
     width: 100%;
@@ -143,6 +142,7 @@ video {
 }
 .portfolio-title ul{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     margin-bottom: 125px;
 }
@@ -165,14 +165,6 @@ video {
     text-decoration: none;
     transition: 1s;
 }
-.portfolio-title ul li a:activ{
-    border-radius: 12px;
-    padding: 5px 10px 7px;
-    color: #FFF;
-    background-color: #2ecc71;
-    margin-bottom: -12px;
-    text-decoration: none;
-}
 #portfolio{
     padding: 120px 0;
 }
@@ -194,14 +186,14 @@ video {
      position: relative;
      display: flex;
 }
-.portfolio-project h2{
+.portfolio-project span{
     display: none;
 }
 .portfolio-project img:hover{
     filter: grayscale(60%);
     transition: 1s;
 }
-.portfolio-project li:hover h2{
+.portfolio-project li:hover span{
     display: block;
     border-radius: 12px;
     color: #ffffff;
@@ -213,7 +205,6 @@ video {
     border: 1px solid #ffffff;
     padding: 8px 17px 11px;
     position: absolute;
-    top: px;
     bottom: 70px;
     left: 125px;
 }
@@ -252,7 +243,9 @@ video {
 .team-item-name{
     padding: 0 0 100px;
     max-width: 25%;
-    
+}
+.team-item-name img{
+    border-radius: 50%;
 }
 .team-item-name a{
     padding: 0 15px;

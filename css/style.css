@@ -46,6 +46,9 @@ a:link, a:visited {
 a:hover {
   text-decoration: underline; }
 
+body {
+  font-family: 'Droid Sans'; }
+
 header {
   background-color: transparent;
   position: fixed;
@@ -75,6 +78,8 @@ header .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -86,10 +91,6 @@ header .container {
 .menu-item a {
   color: #FFF;
   font-size: 16px; }
-
-.video {
-  height: 100vh;
-  background-color: antiquewhite; }
 
 video {
   width: 100%;
@@ -216,6 +217,8 @@ video {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
@@ -241,14 +244,6 @@ video {
   -webkit-transition: 1s;
   -o-transition: 1s;
   transition: 1s; }
-
-.portfolio-title ul li a:activ {
-  border-radius: 12px;
-  padding: 5px 10px 7px;
-  color: #FFF;
-  background-color: #2ecc71;
-  margin-bottom: -12px;
-  text-decoration: none; }
 
 #portfolio {
   padding: 120px 0; }
@@ -278,7 +273,7 @@ video {
   display: -ms-flexbox;
   display: flex; }
 
-.portfolio-project h2 {
+.portfolio-project span {
   display: none; }
 
 .portfolio-project img:hover {
@@ -288,7 +283,7 @@ video {
   -o-transition: 1s;
   transition: 1s; }
 
-.portfolio-project li:hover h2 {
+.portfolio-project li:hover span {
   display: block;
   border-radius: 12px;
   color: #ffffff;
@@ -300,7 +295,6 @@ video {
   border: 1px solid #ffffff;
   padding: 8px 17px 11px;
   position: absolute;
-  top: px;
   bottom: 70px;
   left: 125px; }
 
@@ -342,6 +336,9 @@ video {
 .team-item-name {
   padding: 0 0 100px;
   max-width: 25%; }
+
+.team-item-name img {
+  border-radius: 50%; }
 
 .team-item-name a {
   padding: 0 15px; }

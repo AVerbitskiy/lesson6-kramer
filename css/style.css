@@ -201,6 +201,117 @@ padding: 10px 0;
 .team-item-name li {
   padding: 0 15px;
 }
+#contact .row {
+  margin: 0;
+}
+form{
+  margin-bottom: 15px;
+}
+#contact .section-title {
+  color: #2c3e50;
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 31.29px;
+  letter-spacing: 0.45px;
+}
+#contact .contact-title p {
+  color: #2c3e50;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 33.29px;
+  letter-spacing: 0.26px;
+  padding: 30px 0;
+  text-align: center; 
+}
+#contact .info {
+  display: flex;
+}
+#contact .container {
+  padding: 50px 0;
+}
+.button {
+  color: #ffffff;
+  font-family: "Droid Serif";
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 33.29px;
+  letter-spacing: 0.21px;
+  text-align: left;
+}
+.button input {
+  background-color: #2ecc71;
+  border: none;
+  padding: 6px 30px;
+  border-radius: 20px;
+  color: #ffffff;
+  font-family: "Droid Serif";
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 33.29px;
+  letter-spacing: 0.21px;
+}
+.button input:hover {
+  background-color: #07FA35;
+  color: #6D6C6C;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+}
+.contact-info li{
+  text-align: center;
+}
+.contact-info li:nth-child(odd) {
+  color: #2c3e50;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 33.29px;
+  letter-spacing: 0.16px;
+}
+.contact-info li:nth-child(even) {
+  color: #2c3e50;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 33.29px;
+  letter-spacing: 0.2px;
+  padding-bottom: 15px;
+}
+.contact-info li a {
+  color: #2c3e50;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 33.29px;
+  letter-spacing: 0.2px;
+  padding-bottom: 15px;
+  text-decoration: none;
+}
+.contact-info li a:hover {
+  color: #525DAF;
+}
+.email {
+  display: flex;
+  flex-direction: column;
+}
+textarea:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+.email input, textarea {
+  border: none;
+  border-bottom: 3px solid #2ecc71;
+  color: #2c3e50;
+  font-family: "Droid Serif";
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 33.29px;
+  letter-spacing: 0.26px;
+  margin-bottom: 20px;
+}
+textarea {
+  padding-bottom: 20px;
+}
+
 }
 
 

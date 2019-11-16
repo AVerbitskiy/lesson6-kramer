@@ -2,37 +2,43 @@
 <html lang="en">
 	<head>
 		<title>Lesson6</title>
-		<link rel="stylesheet" href="css/style.css" />
-		<link rel="stylesheet" href="css/fonts.css" />
 		<meta charset="UTF-8" />
-		<!-- <script src="./js/header.js"></script> -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+		<link rel="stylesheet" href="css/fonts.css" />
+		<link rel="stylesheet" href="css/style.css" />		
 	</head>
 	<body>
 		<header>
 		    <div class="container">
-		        <h1 class="site-title">
-		            <a href="index.html" class="logo">
-		                <img src="./img/logo_kramer.png" alt="Logo" class="logo-img">
-		            </a>
-		        </h1>
-		        <nav class="navigation">
-		            <ul class="menu">
-		                <li class="menu-item">
-		                    <a href="#about">About</a>
-		                </li>
-		                <li class="menu-item">
-		                    <a href="#portfolio">Portfolio</a>
-		                </li>
-		                <li class="menu-item">
-		                    <a href="#team">Team</a>
-		                </li>
-		                <li class="menu-item">
-		                    <a href="#contact">Contact</a>
-		                </li>
-		            </ul>
-		        </nav>
+		      	<nav class="navbar navbar-expand-md navbar-dark">
+					<a class="navbar-brand" href="#">
+						<img src="./img/logo_kramer.png" alt="Logo" class="logo-img">
+					</a>
+				 	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				 		<span class="navbar-toggler-icon"></span>
+				 	</button>
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					    <ul class="navbar-nav ml-auto">
+					   		<li class="nav-item active">
+					        	<a class="nav-link" href="#">About</a>
+					        </li>
+					        <li class="nav-item">
+					        	<a class="nav-link" href="#">Portfolio</a>
+					        </li>
+					        <li class="nav-item">
+					        	<a class="nav-link" href="#">Team</a>
+					        </li>
+					        <li class="nav-item">
+					        	<a class="nav-link" href="#">Contact</a>
+					        </li>
+					    </ul>
+					 </div>
+				</nav>
 		    </div>
 		</header>
+
 		<section class="video">
 		    <div class="sixteen-nine">
 		        <div class="content">
@@ -43,33 +49,36 @@
 		            </video>
 		        </div>
 		    </div>
-		    <div class="container">
+		 <!--    <div class="container">
 		    	<h2>Welcome to Kramer Industries</h2>
 		    	<p>Explore</p>
-		    </div>
+		    </div> -->
 		</section>
+
 		<section id="about">
 		    <div class="container">
-		     	<div class="about-title">
-		     		<h1 class="section-title">About</h1>
-		     		<p>
-		     			This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.
-		     		</p>
+		     	<div class="row about-title">
+		     		<div class="col">
+		     			<h1 class="section-title">About</h1>
+		     			<p>
+		     				This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.
+		     			</p>
+		     		</div>
 		     	</div>
-			   	<ul>
-			    	<li>
+			   	<ul class="row justify-content-center">
+			    	<li class="col-xs-12 col-sm-6 col-lg-4">
 			    		<h2>Services</h2>
 			    		<p>
 			    			This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor,
 			    		</p>
 			    	</li>
-			    	<li>
+			    	<li class="col-xs-12 col-sm-6 col-lg-4">
 			    		<h2>Retina Display</h2>
 			    		<p>
 			    			This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor,
 			    		</p>
 			    	</li>
-			    	<li>
+			    	<li class="col-xs-12 col-sm-6 col-lg-4">
 			    		<h2>Full Support</h2>
 			    		<p>
 			    			This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor,
@@ -78,60 +87,73 @@
 		   		</ul>
 		    </div>
 		</section>
+		
 		<section id="portfolio">
 		    <div class="container">
 				<div class="portfolio-title">
 					<h1 class="section-title">Portfolio</h1>
-					<ul>
-						<li><a href="#">All</a></li>
-						<li><a href="#">Design</a></li>
-						<li><a href="#">Web</a></li>
-						<li><a href="#">Illustration</a></li>
-						<li><a href="#">Motion</a></li>
+					<ul class="row">
+						<li class="col-xs-12 col-sm-6 col-lg-1"><a href="#">All</a></li>
+						<li class="col-xs-12 col-sm-6 col-lg-1"><a href="#">Design</a></li>
+						<li class="col-xs-12 col-sm-6 col-lg-1"><a href="#">Web</a></li>
+						<li class="col-xs-12 col-sm-6 col-lg-1"><a href="#">Illustration</a></li>
+						<li class="col-xs-12 col-sm-6 col-lg-1"><a href="#">Motion</a></li>
 					</ul>
 				</div>
-				<ul class="portfolio-project">
-					<li>
-						<a href="#"><img src="./img/top-left.jpg" alt="top-left"><span>View Project</span></a>
+				<ul class="row portfolio-project text-center">
+					<li class="col-xs-12 col-sm-6 col-lg-4">
+						<a href="#"><img src="./img/top-left.jpg" alt="Top-left"><span>View Project</span></a>
 					</li>
-					<li>
-						<a href="#"><img src="./img/top-middle.jpg" alt="top-middle"><span>View Project</span></a>
+					<li class="col-xs-12 col-sm-6 col-lg-4">
+						<a href="#"><img src="./img/top-middle.jpg" alt="Top-middle"><span>View Project</span></a>
 					</li>
-					<li>
-						<a href="#"><img src="./img/top-right.jpg" alt="top-right"><span>View Project</span></a>
+					<li class="col-xs-12 col-sm-6 col-lg-4">
+						<a href="#"><img src="./img/top-right.jpg" alt="Top-right"><span>View Project</span></a>
 					</li>
-					<li>
-						<a href="#"><img src="./img/bottom-left.jpg" alt="bottom-left"><span>View Project</span></a>
+					<li class="col-xs-12 col-sm-6 col-lg-4">
+						<a href="#"><img src="./img/bottom-left.jpg" alt="Bottom-left"><span>View Project</span></a>
 					</li>
-					<li>
-						<a href="#"><img src="./img/bottom-middle.jpg" alt="bottom-middle"><span>View Project</span></a>
+					<li class="col-xs-12 col-sm-6 col-lg-4">
+						<a href="#"><img src="./img/bottom-middle.jpg" alt="Bottom-middle"><span>View Project</span></a>
 					</li>
-					<li>
-						<a href="#"><img src="./img/bottom-right.jpg" alt="bottom-right"><span>View Project</span></a>
+					<li class="col-xs-12 col-sm-6 col-lg-4">
+						<a href="#"><img src="./img/bottom-right.jpg" alt="Bottom-right"><span>View Project</span></a>
 					</li>
 				</ul>
 		    </div>
 		</section>
+
 		<section id="team">
 		    <div class="container">
 		    	<h1 class="section-title">Team</h1>
-		       	<div class="team-item">
-			       	<div class="team-item-name">
+		       	<div class="row text-center team-item">
+			       	<div class="col-xs-12 col-sm-6 team-item-name">
 				    	<img src="./img/Cosmo.jpg" alt="Cosmo Kramer">
 				    	<h2>Cosmo Kramer</h2>
 				    	<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor,</p>
-				    	<a href="#" target="_blank"><i class="fa fa-twitter fa-2x"></i></a>
-						<a href="#" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
+				    	<ul>
+				    		<li>
+				    			<a href="#" target="_blank"><i class="fa fa-twitter fa-2x"></i></a>
+				    		</li>
+				    		<li>
+				    			<a href="#" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
+				    		</li>
+				    	</ul>
 				    </div>
-				     <div class="team-item-name">
+				    <div class="col-xs-12 col-sm-6 team-item-name">
 				    	<img src="./img/George.jpg" alt="George Constanza">
 				    	<h2>George Constanza</h2>
 				    	<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor,</p>
-				    	<a href="#" target="_blank"><i class="fa fa-twitter fa-2x"></i></a>
+				    	<ul>
+				    		<li>
+				    			<a href="#" target="_blank"><i class="fa fa-twitter fa-2x"></i></a>
+				    		</li>
+				    	</ul>
 				    </div>
 		       </div>
 		    </div>
 		</section>
+
 		<section id="contact">
 			<div class="container">
 				<div class="contact-title">
@@ -190,6 +212,9 @@
 			</div>
 		</footer>
 		<script src="./js/custom.js"></script>
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 	</body>
 </html>
 

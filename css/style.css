@@ -6,6 +6,7 @@ img {
   max-width: 100%;
   height: auto;
 }
+
 @media (min-width: 320px) {
 
 header .nav-item {
@@ -103,12 +104,10 @@ header .navbar-dark .nav-link:hover {
 }
 #about {
   background-color: #34495e;
-  padding: 50px 0 50px;
   text-align: center;
 }
 #about .section-title {
   padding: 50px 0;
-  font-size: 70px;
 }
 #about h1, #portfolio h1, #team h1, #contact h1 {
   font-size: 45px;
@@ -126,9 +125,6 @@ header .navbar-dark .nav-link:hover {
   line-height: 33.29px;
   letter-spacing: 0.26px;
   position: relative;
-}
-.about-title {
-  margin-bottom: 70px;
 }
 #about p {
   font-family: 'Droid Serif', serif;
@@ -151,10 +147,10 @@ header .navbar-dark .nav-link:hover {
 .portfolio-title ul{
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 .portfolio-title ul li {
   text-align: center;
-
 }
 .portfolio-title ul li a {
   color: #2c3e50;
@@ -181,7 +177,7 @@ header .navbar-dark .nav-link:hover {
   padding: 10px;
 }
 .portfolio-project li {
-padding: 10px 0;
+padding: 5px 5px;
 }
 .portfolio-project li:hover {
   position: relative;
@@ -214,10 +210,10 @@ padding: 10px 0;
 }
 .team-item {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 }
 #team h1 {
-  padding: 50px 0;
+  padding: 20px 0;
 }
 .team-item__name img {
   border-radius: 50%;
@@ -272,8 +268,8 @@ form{
 #contact .info {
   display: flex;
 }
-#contact .container {
-  padding: 50px 0 0;
+#contact .about, #contact .container, #team .container {
+  padding: 20px 0 0;
 }
 .button {
   color: #ffffff;
@@ -370,6 +366,7 @@ footer .container {
 }
 .social-footer {
   display: flex;
+  margin: 0 auto;
 }
 .footer-contact p {
   font-size: 16px;
@@ -400,9 +397,15 @@ i:hover {
 }
 }
 
+@media (min-width: 576px) {
 
-
-
+#about {
+  padding: 10px 0;
+}
+.about-title {
+    margin-bottom: 0;
+}
+}
 
 @media (min-width: 768px) {
 
@@ -432,296 +435,37 @@ video {
 }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* 
-
-
-#contact .section-title {
-  color: #2c3e50;
-  font-family: "Droid Sans";
-  font-size: 45px;
-  font-weight: 700;
-  line-height: 31.29px;
-  letter-spacing: 0.45px; }
-
-#contact .contact-title p {
-  color: #2c3e50;
-  font-family: "Droid Sans";
-  font-size: 26px;
-  font-weight: 700;
-  line-height: 33.29px;
-  letter-spacing: 0.26px;
-  padding-top: 67px;
-  padding-bottom: 87px; }
+@media (min-width: 992px) {
 
 #contact .info {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  max-width: 700px;
-  margin: 0 auto; }
-
-#contact .container {
-  padding-top: 120px;
-  padding-bottom: 110px; }
-
-.button {
-  color: #ffffff;
-  font-family: "Droid Serif";
-  font-size: 21px;
-  font-weight: 400;
-  line-height: 33.29px;
-  letter-spacing: 0.21px;
-  text-align: left; }
-
-.button input {
-  background-color: #2ecc71;
-  border: none;
-  padding: 6px 30px;
-  border-radius: 20px;
-  color: #ffffff;
-  font-family: "Droid Serif";
-  font-size: 21px;
-  font-weight: 400;
-  line-height: 33.29px;
-  letter-spacing: 0.21px; }
-
-.button input:hover {
-  background-color: #07FA35;
-  color: #6D6C6C;
-  -webkit-transition: 1s;
-  -o-transition: 1s;
-  transition: 1s; }
-
-.contact-info li:nth-child(odd) {
-  color: #2c3e50;
-  font-family: "Droid Sans";
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 33.29px;
-  letter-spacing: 0.16px;
-  text-align: left; }
-
-.contact-info li:nth-child(even) {
-  color: #2c3e50;
-  font-family: "Droid Sans";
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 33.29px;
-  letter-spacing: 0.2px;
-  text-align: left;
-  padding-bottom: 15px; }
-
-.contact-info li a {
-  color: #2c3e50;
-  font-family: "Droid Sans";
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 33.29px;
-  letter-spacing: 0.2px;
-  text-align: left;
-  padding-bottom: 15px;
-  text-decoration: none; }
-
-.contact-info li a:hover {
-  color: #525DAF; }
-
-.email {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column; }
-
-textarea:focus::-webkit-input-placeholder {
-  color: transparent; }
-
-input:focus::-webkit-input-placeholder {
-  color: transparent; }
-
-.email input, textarea {
-  border: none;
-  border-bottom: 3px solid #2ecc71;
-  color: #2c3e50;
-  font-family: "Droid Serif";
-  font-size: 26px;
-  font-weight: 400;
-  line-height: 33.29px;
-  letter-spacing: 0.26px;
-  margin-bottom: 50px; }
-
-textarea {
-  padding-bottom: 50px; }
-
-.info form, .info ul {
-  padding: 0 60px; }
-
-
-
-
-
-footer {
-  background-color: #2c3e50; }
-
-footer .container {
-  padding: 75px 0; }
-
-.site-title {
-  text-align: left; }
-
-.footer-contact {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  padding-top: 35px; }
-
-.social-footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
-
-.social-footer li {
-  width: 59px;
-  height: 58px;
-  color: #FFF; }
-
-.footer-contact p {
-  max-width: 215px;
-  color: #ffffff;
-  font-family: "Droid Sans";
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 26.29px;
-  letter-spacing: 0.16px; }
-
-.footer-contact div {
-  margin: 0 10%;
-  max-width: 160px; }
-
-.footer-contact div a {
-  color: #FFF;
-  font-family: "Droid Sans";
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 26.29px;
-  letter-spacing: 0.16px; }
-
-.footer-contact div a:hover {
-  -webkit-transition: 1s;
-  -o-transition: 1s;
-  transition: 1s;
-  text-decoration: none;
-  color: #525DAF; }
-
-.footer-contact ul {
-  max-width: 215px; }
-
-.fa {
-  color: #FFF; }
-
-.fa:hover {
-  color: #0DA8F8;
-  -webkit-transition: 1s;
-  -o-transition: 1s;
-  transition: 1s; }
- 
-
-
-
-
-.portfolio-title ul {
-  margin-bottom: 125px;
+  justify-content: center;
 }
-.portfolio-title ul li a {
-  padding: 0 30px;
-  color: #2c3e50;
-  font-family: "Droid Sans";
-  font-size: 30px;
-  font-weight: 400;
-  line-height: 31.29px;
-  letter-spacing: 0.3px; }
+.contact-info li {
+  text-align: left;
+}
+#contact .container, #team .container {
+  padding: 50px 0 0;
+}
+#contact form {
+  max-width: 40%;
+}
+#contact .info {
+    justify-content: space-around;
+}
+.social-footer {
+   margin: 0;
+}
+}
 
-.portfolio-title ul li a:hover {
-  border-radius: 12px;
-  padding: 5px 10px 7px;
-  margin: 0 20px;
-  color: #FFF;
-  background-color: #2ecc71;
-  margin-bottom: -12px;
-  text-decoration: none;
-  -webkit-transition: 1s;
-  -o-transition: 1s;
-  transition: 1s; }
+@media (min-width: 1920px) {
 
-#portfolio {
-  padding: 120px 0; }
-
-.portfolio-title h1 {
-  padding-bottom: 75px; }
-
-.portfolio-project {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  padding: 10px; }
-
-.portfolio-project li {
-  margin-bottom: 29px;
-  width: 343px;
-  height: 257px; }
-
-.portfolio-project li:hover {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
-
-.portfolio-project span {
-  display: none; }
-
-.portfolio-project img:hover {
-  -webkit-filter: grayscale(60%);
-  filter: grayscale(60%);
-  -webkit-transition: 1s;
-  -o-transition: 1s;
-  transition: 1s; }
-
-.portfolio-project li:hover span {
-  display: block;
-  border-radius: 12px;
-  color: #ffffff;
-  font-family: "Droid Serif";
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 26.31px;
-  letter-spacing: 0.15px;
-  border: 1px solid #ffffff;
-  padding: 8px 17px 11px;
-  position: absolute;
-  bottom: 70px;
-  left: 125px; }
+.video {
+    height: auto;
+}
+.about-title {
+  padding-bottom: 30px;
+}
+#about ul {
+  padding: 40px;
+}
+}
